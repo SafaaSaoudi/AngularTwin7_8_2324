@@ -1,0 +1,8 @@
+<p>users works!</p>
+<a routerLink="addUser"> Add</a><br>
+<a [routerLink]="['editUser', 1]"> Edit</a><br>
+
+<button (click)="goToAdd()">Add via navigate</button>
+<button (click)="goToEdit(1)">Edit</button>
+
+<router-outlet></router-outlet>
